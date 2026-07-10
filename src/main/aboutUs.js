@@ -1,15 +1,24 @@
 import React from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
+import useSeo from '../useSeo';
 import '../css/aboutUs.css';
 
 const AboutUs = () => {
+  useSeo({
+    title: 'About Us | Super League Promotions',
+    description:
+      'Founded in 1996, Super League Promotions introduced British Pool to Malaysia. Learn about our SEA Games heritage and our premium, Hainsworth-fitted pool tables across the Klang Valley.',
+    path: '/about',
+  });
+
   return (
     <div className="AboutUs">
       <Navbar />
 
       {/* Main Content */}
       <div className="about-content">
+        <h1 className="sr-only">About Super League Promotions</h1>
 
         {/* Timeline Section */}
         <section className="about-timeline">

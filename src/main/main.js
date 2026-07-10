@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
+import useSeo from '../useSeo';
 import '../css/main.css';
 import bannerImage from '../asset/hero-bg.jpg';
 import upYourGameImage from '../asset/IMG_8917.jpg';
@@ -17,6 +18,13 @@ import showcase6 from '../asset/6.jpg';
 import showcase7 from '../asset/7.jpg';
 
 const Main = () => {
+  useSeo({
+    title: 'Super League Promotions',
+    description:
+      'Super League Promotions supplies premium British pool tables to bars, pubs and venues across the Klang Valley — zero upfront cost, a profit-sharing partnership, and authentic Hainsworth cloth from England.',
+    path: '/',
+  });
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const showcaseImages = [

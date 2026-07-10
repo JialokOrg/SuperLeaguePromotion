@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
+import useSeo from '../useSeo';
 import '../css/faq.css';
 
 const FAQ = () => {
@@ -32,6 +33,22 @@ const FAQ = () => {
       answer: "You can reach us on WhatsApp or call 019-3312599 for any inquiries. We're happy to help you find the perfect setup for your venue."
     }
   ];
+
+  useSeo({
+    title: 'FAQ | Super League Promotions',
+    description:
+      'Common questions about Super League Promotions — British pool tables, Hainsworth cloth, profit-sharing partnerships, delivery times, and how to get started.',
+    path: '/faq',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    },
+  });
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
