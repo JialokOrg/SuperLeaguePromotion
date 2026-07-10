@@ -1,10 +1,10 @@
 /* Footer Styles */
 .footer {
   width: 100%;
-  background: #ffffff;
+  background: #152418;
   padding: 30px 40px;
   margin-top: 0;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-content {
@@ -15,7 +15,7 @@
 
 .footer-text {
   font-size: 14px;
-  color: #2c3e50;
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 400;
   letter-spacing: 0.5px;
   margin: 0;

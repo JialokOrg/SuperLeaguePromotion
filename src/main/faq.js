@@ -21,7 +21,7 @@ const FAQ = () => {
     },
     {
       question: "How long does delivery of the cloth take?",
-      answer: "Delivery times depend on your location. Typically, delivery is completed within 3–7 working days after order confirmation."
+      answer: "Delivery times depends on your location. Typically, delivery is completed within 3–7 working days after order confirmation."
     },
     {
       question: "Do you provide profit-sharing pool tables for venues?",
@@ -29,7 +29,7 @@ const FAQ = () => {
     },
     {
       question: "How can I contact Super League Promotions?",
-      answer: "You can WhatsApp or call us at 019-3312599 for inquiries, quotes, or service requests. We're happy to help you find the perfect setup for your venue."
+      answer: "You can reach us on WhatsApp or call 019-3312599 for any inquiries. We're happy to help you find the perfect setup for your venue."
     }
   ];
 
@@ -71,9 +71,9 @@ const FAQ = () => {
 
           <div className="faq-contact">
             <h3>Still have questions?</h3>
-            <p>Contact us directly for personalized assistance</p>
+            <p>Contact us directly</p>
             <a href="https://wa.me/60193312599" className="contact-button" target="_blank" rel="noopener noreferrer">
-              WhatsApp Us
+              WhatsApp
             </a>
           </div>
         </div>

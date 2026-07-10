@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
 import '../css/aboutUs.css';
-import founderImg from '../asset/lim.png';
 
 const AboutUs = () => {
   return (
@@ -18,16 +17,16 @@ const AboutUs = () => {
           {/* 1998 - The Beginning */}
           <div className="timeline-item">
             <div className="timeline-year">
-              <span className="year-number">1998</span>
+              <span className="year-number">1996</span>
               <span className="year-label">The Beginning</span>
             </div>
             <div className="timeline-content">
               <h2 className="timeline-title">Where It All Started</h2>
               <p className="timeline-text">
-                Super League Promotions was founded by <strong>M.S. Lim</strong>, a visionary who first introduced British Pool to Malaysia's bar and pub scene. What began as a personal passion for the game grew into a mission — to bring the authentic British Pool experience to venues across the country.
+                Super League Promotions was founded by <strong>M.S. Lim</strong>, a visionary who first introduced British Pool to Malaysia's bar and pub scene. What began as a personal passion for the game grew into a mission — to bring the authentic British Pool experience to venues across Klang Valley.
               </p>
               <p className="timeline-text">
-                At a time when British Pool was virtually unknown in Malaysia, M.S. Lim saw its potential. He believed in the game's ability to bring people together, to create moments of connection and friendly competition in pubs and bars nationwide.
+                At a time when British Pool was virtually unknown in Malaysia, M.S. Lim saw its potential. He believed in the game's ability to bring people together, to create moments of connection and friendly competition in pubs and bars.
               </p>
             </div>
           </div>
@@ -60,7 +59,7 @@ const AboutUs = () => {
             <div className="timeline-content">
               <h2 className="timeline-title">Premium British Pool Tables</h2>
               <p className="timeline-text">
-                For over two decades, we've been supplying <strong>high-quality British pool tables</strong> to pubs and bars across Malaysia. Each table is fitted with <strong>Hainsworth Cuesport Cloth</strong> — a tournament-grade cloth imported directly from England.
+                For over two decades, we've been supplying <strong>high-quality British pool tables</strong> to pubs and bars across Klang Valley. Each table is fitted with <strong>Hainsworth Cuesport Cloth</strong> — a tournament-grade cloth imported directly from England.
               </p>
               <p className="timeline-text">
                 This premium cloth delivers professional performance, precision, and the signature smooth play that serious players appreciate. We're also <strong>authorized suppliers of Hainsworth cloth</strong>, trusted by venues and cue sport enthusiasts who value authentic quality.
@@ -68,18 +67,6 @@ const AboutUs = () => {
             </div>
           </div>
 
-        </section>
-
-        {/* Founder Tribute Section */}
-        <section className="founder-section">
-          <div className="founder-tribute">
-            <img src={founderImg} alt="Mr Lim - Founder" className="founder-image" />
-            <div className="founder-info">
-              <p className="founder-memory">In Loving Memory</p>
-              <h3 className="founder-name">Mr Lim</h3>
-              <p className="founder-title">Founder of Super League Promotions</p>
-            </div>
-          </div>
         </section>
 
         {/* Mission Section */}

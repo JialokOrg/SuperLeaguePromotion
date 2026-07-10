@@ -77,9 +77,9 @@ const Navbar = () => {
         {/* Right Navigation (Desktop) */}
         <ul className="nav-menu nav-menu-right desktop-only">
           <li className="nav-item">
-            <Link to="/contact" className="nav-link nav-link-button">
+            <a href="https://wa.me/60193312599" className="nav-link nav-link-button" target="_blank" rel="noopener noreferrer">
               CONTACT US
-            </Link>
+            </a>
           </li>
         </ul>
 

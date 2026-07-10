@@ -19,8 +19,18 @@ body {
 .Main {
   min-height: 100vh;
   background: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   overflow-x: hidden;
+}
+
+/* Display font for punchy headings & UI */
+.banner-title,
+.card-title,
+.btn-primary,
+.btn-secondary,
+.cta-title,
+.section-eyebrow {
+  font-family: 'Poppins', 'Inter', sans-serif;
 }
 
 .main-content {
@@ -107,6 +117,25 @@ body {
   object-position: center;
   display: block;
   filter: brightness(0.6);
+}
+
+/* Smooth fade so the hero dissolves into the page instead of a hard cut */
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 340px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.08) 55%,
+    rgba(255, 255, 255, 0.55) 82%,
+    #ffffff 100%
+  );
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* Banner Overlay */
@@ -233,7 +262,14 @@ body {
   padding: 40px 30px;
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.18), 0 6px 16px rgba(0, 0, 0, 0.10);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 34px 64px rgba(0, 0, 0, 0.24), 0 10px 22px rgba(0, 0, 0, 0.14);
 }
 
 /* Card Color Variants */
@@ -267,12 +303,11 @@ body {
 }
 
 .card-title {
-  font-size: 52px;
+  font-size: 34px;
   font-weight: 700;
-  line-height: 1;
-  margin: 10px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 0 0 12px;
+  letter-spacing: 1px;
 }
 
 .card-dark .card-title {
@@ -280,9 +315,10 @@ body {
 }
 
 .card-description {
-  font-size: 15px;
-  font-weight: 300;
-  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 8px;
+  line-height: 1.4;
   letter-spacing: 0.5px;
 }
 
@@ -600,7 +636,7 @@ body {
   font-weight: 400;
   color: #1a1a1a;
   margin-bottom: 40px;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
   font-style: italic;
   letter-spacing: -0.5px;
 }
@@ -680,7 +716,7 @@ body {
   font-weight: 400;
   color: #1a1a1a;
   margin-bottom: 15px;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
   font-style: italic;
   letter-spacing: -0.5px;
 }
@@ -1524,4 +1560,160 @@ body {
   .player-placeholder {
     font-size: 18px;
   }
+}
+
+/* ========================================
+   Premium Enhancements (makeover)
+   ======================================== */
+
+/* Scroll-reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Section eyebrow label */
+.section-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #16a085;
+  margin-bottom: 16px;
+}
+
+/* Card icons */
+.card-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+}
+.card-icon svg {
+  width: 30px;
+  height: 30px;
+}
+.card-yellow .card-icon {
+  background: rgba(44, 62, 80, 0.12);
+}
+
+/* Feature checklist inside service sections */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0;
+}
+.feature-list li {
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 14px;
+  font-size: 17px;
+  color: #333333;
+  line-height: 1.5;
+}
+.feature-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 50%;
+  background: #16a085;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Tinted alternating section */
+.section-tinted {
+  background: #f6f8f7;
+}
+
+/* Call-to-action band */
+.cta-band {
+  padding: 92px 40px;
+  background: linear-gradient(160deg, #16a085 0%, #0f3d34 100%);
+  text-align: center;
+}
+.cta-band-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.cta-eyebrow {
+  color: #f1c40f;
+}
+.cta-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 18px;
+  line-height: 1.25;
+}
+.cta-subtitle {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 34px;
+}
+.cta-buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cta-phone {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+.cta-phone:hover {
+  color: #f1c40f;
+}
+
+@media screen and (max-width: 768px) {
+  .cta-title { font-size: 30px; }
+  .cta-band { padding: 64px 24px; }
+  .cta-subtitle { font-size: 16px; }
+  .feature-list li { font-size: 15px; }
+  .up-your-game-title { font-size: 40px; }
+}
+
+/* Enquiry form status message */
+.form-status {
+  margin: 16px 0 0;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+}
+.form-status-success {
+  color: #1abc9c;
+}
+.form-status-error {
+  color: #e74c3c;
+}
+.form-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
