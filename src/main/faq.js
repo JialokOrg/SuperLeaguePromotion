@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './navbar';
+import Footer from './footer';
 import '../css/faq.css';
 
 const FAQ = () => {
@@ -77,6 +78,8 @@ const FAQ = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
