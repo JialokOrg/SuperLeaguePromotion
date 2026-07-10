@@ -195,7 +195,7 @@
 }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 7px);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -203,7 +203,7 @@
 }
 
 .hamburger.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Mobile Sidebar */
