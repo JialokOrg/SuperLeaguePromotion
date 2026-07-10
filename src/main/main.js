@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
 import '../css/main.css';
-import bannerImage from '../asset/hero-bg.png';
+import bannerImage from '../asset/hero-bg.jpg';
 import upYourGameImage from '../asset/IMG_8917.jpg';
 import secondSectionImage from '../asset/IMG_1296.jpg';
 import thirdSectionImage from '../asset/IMG_0986.jpg';
