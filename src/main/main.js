@@ -213,7 +213,7 @@ const Main = () => {
             {/* Right Image */}
             <div className="up-your-game-image-wrapper reveal">
               <div className="up-your-game-image-container">
-                <img src={upYourGameImage} alt="Superleague British pool table in a venue" className="up-your-game-image" />
+                <img src={upYourGameImage} alt="Superleague British pool table in a venue" className="up-your-game-image" loading="lazy" />
               </div>
             </div>
           </div>
@@ -225,7 +225,7 @@ const Main = () => {
             {/* Left Image */}
             <div className="up-your-game-image-wrapper reveal">
               <div className="up-your-game-image-container">
-                <img src={secondSectionImage} alt="Superleague team fitting a British pool table" className="up-your-game-image" />
+                <img src={secondSectionImage} alt="Superleague team fitting a British pool table" className="up-your-game-image" loading="lazy" />
               </div>
             </div>
 
@@ -265,7 +265,7 @@ const Main = () => {
             {/* Right Image */}
             <div className="up-your-game-image-wrapper reveal">
               <div className="up-your-game-image-container">
-                <img src={thirdSectionImage} alt="Superleague pool table in a partner venue" className="up-your-game-image" />
+                <img src={thirdSectionImage} alt="Superleague pool table in a partner venue" className="up-your-game-image" loading="lazy" />
               </div>
             </div>
           </div>
@@ -290,7 +290,7 @@ const Main = () => {
               >
                 {showcaseImages.map((image, index) => (
                   <div key={index} className="carousel-slide">
-                    <img src={image.src} alt={`Showcase ${index + 1}`} className="carousel-image" />
+                    <img src={image.src} alt={`Showcase ${index + 1}`} className="carousel-image" loading="lazy" />
                   </div>
                 ))}
               </div>

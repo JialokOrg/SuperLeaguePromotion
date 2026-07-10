@@ -426,13 +426,25 @@ body {
 
 @media screen and (max-width: 768px) {
   .hero-banner {
-    height: 570px;
+    height: auto;
     margin-bottom: 0;
-    padding-top: 70px;
+    padding-top: 0;
+  }
+
+  .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .banner-overlay {
-    padding: 0 40px;
+    position: relative;
+    top: auto;
+    height: auto;
+    min-height: 600px;
+    padding: 110px 30px 50px;
   }
 
   .banner-title {
@@ -538,13 +550,14 @@ body {
 
 @media screen and (max-width: 480px) {
   .hero-banner {
-    height: 520px;
+    height: auto;
     margin-bottom: 0;
-    padding-top: 70px;
+    padding-top: 0;
   }
 
   .banner-overlay {
-    padding: 0 25px;
+    min-height: 540px;
+    padding: 100px 24px 44px;
   }
 
   .banner-title {
