@@ -62,7 +62,7 @@ const AboutUs = () => {
           {/* What We Do */}
           <div className="timeline-item">
             <div className="timeline-year">
-              <span className="year-number">26+</span>
+              <span className="year-number">30+</span>
               <span className="year-label">Years of Excellence</span>
             </div>
             <div className="timeline-content">
