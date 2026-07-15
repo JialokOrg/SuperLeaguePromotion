@@ -35,9 +35,9 @@ const FAQ = () => {
   ];
 
   useSeo({
-    title: 'FAQ | Super League Promotions',
+    title: 'British Pool Table & Hainsworth Cloth FAQ | Malaysia',
     description:
-      'Common questions about Super League Promotions — British pool tables, Hainsworth cloth, profit-sharing partnerships, delivery times, and how to get started.',
+      'FAQs on British pool table rental, profit-sharing and supply, plus Hainsworth pool & snooker cloth in Malaysia — Kuala Lumpur, Selangor and the Klang Valley.',
     path: '/faq',
     jsonLd: {
       '@context': 'https://schema.org',

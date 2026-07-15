@@ -19,9 +19,9 @@ import showcase7 from '../asset/7.jpg';
 
 const Main = () => {
   useSeo({
-    title: 'Super League Promotions',
+    title: 'British Pool Tables Malaysia | Super League Promotions',
     description:
-      'Super League Promotions supplies premium British pool tables to bars, pubs and venues across the Klang Valley — zero upfront cost, a profit-sharing partnership, and authentic Hainsworth cloth from England.',
+      'British pool table supplier in Malaysia — rent or profit-share premium British pool tables for your pub or bar across Kuala Lumpur, Selangor and the Klang Valley. Authorised Hainsworth cloth distributor.',
     path: '/',
   });
 
@@ -283,7 +283,7 @@ const Main = () => {
         <section className="showcase-section">
           <div className="showcase-header reveal">
             <h2 className="showcase-title">Showcase</h2>
-            <p className="showcase-subtitle">Some of our tables across Klang Valley</p>
+            <p className="showcase-subtitle">Some of our British pool tables across Kuala Lumpur, Selangor &amp; the Klang Valley</p>
           </div>
 
           <div className="showcase-carousel">

@@ -6,9 +6,9 @@ import '../css/aboutUs.css';
 
 const AboutUs = () => {
   useSeo({
-    title: 'About Us | Super League Promotions',
+    title: 'British Pool Table Supplier Malaysia | Super League Promotions',
     description:
-      'Founded in 1996, Super League Promotions introduced British Pool to Malaysia. Learn about our SEA Games heritage and our premium, Hainsworth-fitted pool tables across the Klang Valley.',
+      'For 30 years, Super League Promotions has supplied British pool tables to pubs and bars across Kuala Lumpur, Selangor and the Klang Valley — fitted with premium Hainsworth cloth from England.',
     path: '/about',
   });
 
@@ -68,7 +68,7 @@ const AboutUs = () => {
             <div className="timeline-content">
               <h2 className="timeline-title">Premium British Pool Tables</h2>
               <p className="timeline-text">
-                For over two decades, we've been supplying <strong>high-quality British pool tables</strong> to pubs and bars across Klang Valley. Each table is fitted with <strong>Hainsworth Cuesport Cloth</strong> — a tournament-grade cloth imported directly from England.
+                For over two decades, we've been supplying <strong>high-quality British pool tables</strong> to pubs and bars across Kuala Lumpur, Selangor and the Klang Valley. Each table is fitted with <strong>Hainsworth Cuesport Cloth</strong> — a tournament-grade cloth imported directly from England.
               </p>
               <p className="timeline-text">
                 This premium cloth delivers professional performance, precision, and the signature smooth play that serious players appreciate. We're also <strong>authorized suppliers of Hainsworth cloth</strong>, trusted by venues and cue sport enthusiasts who value authentic quality.
