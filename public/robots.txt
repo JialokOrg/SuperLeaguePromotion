@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://superleaguepromotions.pages.dev/sitemap.xml
+Sitemap: https://superleaguepromotions.com/sitemap.xml
